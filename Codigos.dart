@@ -47,7 +47,7 @@ Tercer puntovoid main() {
   
   
 }*/
-/*Quinto Punto
+/*Sexto Punto
 void main() {
 Map<String, dynamic> obj = {
   "Producto1":{"Nombre":"Camisa","Precio":20000,"Color":"Rojo"},
@@ -60,7 +60,7 @@ Map<String, dynamic> obj = {
  suma= obj["Producto1"]["Precio"] + obj["Producto2"]["Precio"]+ obj["Producto3"]["Precio"]+obj["Producto4"]["Precio"]+obj["Producto5"]["Precio"];
   print("el tota es de $suma");
 }*/
-/*Sexto Punto
+/*Septimo Punto
 import "dart:math";
 void main() {
   double catetoA = 3;
