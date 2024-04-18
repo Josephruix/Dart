@@ -31,7 +31,8 @@ double calcularDistancia(double velocidad, double tiempo) {
 }
 */
 /*
-Tercer puntovoid main() {
+Tercer punto
+void main() {
   int numero1= 3;
   int numero2=2;
   int numero3= 5;
@@ -47,6 +48,18 @@ Tercer puntovoid main() {
   
   
 }*/
+
+ /*cuarto punto
+void main() {
+  double base = 6;
+  double altura = 4;
+  double area = base*altura/2;
+  
+  print('El área del triángulo es: $area');
+  
+}
+
+ /*
 /*Sexto Punto
 void main() {
 Map<String, dynamic> obj = {
