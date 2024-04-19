@@ -144,7 +144,7 @@ void main() {
 /*
 Punto Diez
 void main() {
-  // Mapa para almacenar la información personal del usuario
+  
   Map<String, dynamic> informacionPersonal = {
     'Nombre': 'Juan',
     'Fecha de nacimiento': '01/01/2000',
@@ -153,7 +153,7 @@ void main() {
     'Dirección': 'Calle Principal'
   };
 
-  // Mostrar la información personal del usuario
+  
   print('Información personal:');
   informacionPersonal.forEach((key, value) {
     print('$key: $value');
