@@ -58,6 +58,23 @@ void main() {
   print('El área del triángulo es: $area');
   
 }
+/*
+/*Quinto punto
+void main() {
+  
+  int respuestasCorrectas = 3;
+  int respuestasIncorrectas = 2;
+  int respuestasEnBlanco = 1;
+
+ 
+  int puntajeFinal = (respuestasCorrectas * 4) +
+      (respuestasIncorrectas * -1) +
+      (respuestasEnBlanco * 0);
+
+ 
+  print('Su puntaje final es: $puntajeFinal');
+}
+*/
 
  /*
 /*Sexto Punto
@@ -88,6 +105,61 @@ void main() {
   print('La longitud de la hipotenusa es: $hipotenusa');
 }
 */
+/*Octavo Punto
+void main() {
+  // Definir las preguntas y respuestas
+  List<String> preguntas = [
+    "El sol es una estrella: (V) Verdadero o (F) Falso?",
+    "El agua hierve a 100 grados Celsius: (V) Verdadero o (F) Falso?",
+    "La Tierra es plana: (V) Verdadero o (F) Falso?"
+  ];
+
+  List<String> respuestas = ["V", "V", "F"]; // Respuestas correctas
+  List<String> respuestasUsuario = ["V", "F", "F"]; // Respuestas simuladas del usuario
+
+  // Mostrar las respuestas correctas y las respuestas del usuario
+  print("\nRespuestas:");
+  for (int i = 0; i < preguntas.length; i++) {
+    print("Pregunta ${i + 1}:");
+    print("Respuesta correcta: ${respuestas[i]}");
+    print("Tu respuesta: ${respuestasUsuario[i]}");
+    print("");
+  }
+}
+*/
+/*Punto  nueve
+void main() {
+  // Notas simuladas del estudiante
+  double notaTareas = 8.5;
+  double notaExposiciones = 7.0;
+  double notaParcial = 9.0;
+
+  // Calcular la nota final
+  double notaFinal = (notaTareas * 0.3) + (notaExposiciones * 0.3) + (notaParcial * 0.4);
+
+  // Mostrar la nota final
+  print('La nota final del estudiante es: $notaFinal');
+}
+
+/*
+Punto Diez
+void main() {
+  // Mapa para almacenar la información personal del usuario
+  Map<String, dynamic> informacionPersonal = {
+    'Nombre': 'Juan',
+    'Fecha de nacimiento': '01/01/2000',
+    'Semestre': 3,
+    'Teléfono': '1234567890',
+    'Dirección': 'Calle Principal'
+  };
+
+  // Mostrar la información personal del usuario
+  print('Información personal:');
+  informacionPersonal.forEach((key, value) {
+    print('$key: $value');
+  });
+}
+
 
 
 
