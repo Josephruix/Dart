@@ -39,9 +39,9 @@ void main() {
 
 void addObject(List<Map<String, dynamic>> list, String code, String name, String description) {
   Map<String, dynamic> object = {
-    'codigo': code, // Cambio de 'code' a 'codigo'
-    'nombre': name, // Cambio de 'name' a 'nombre'
-    'descripcion': description, // Sin cambios en 'description'
+    'codigo': code, 
+    'nombre': name, 
+    'descripcion': description, 
   };
   list.add(object);
 }
@@ -92,7 +92,7 @@ void main() {
   } else if (numero < 0) {
     print('El número ingresado es negativo.');
   } else {
-    print('El número ingresado es cero.');
+    print('El numero ingresado es cero.');
   }
 }
 */
@@ -105,7 +105,7 @@ void main() {
 
   String mensaje = (numero % 2 == 0) ? 'par' : 'impar';
 
-  print('El número ingresado es $mensaje.');
+  print('El numero ingresado es $mensaje.');
 }*/
 
 /* punto 8
@@ -120,9 +120,9 @@ void main() {
   bool divisiblePor5y7 = divisibleEntre5 && divisibleEntre7;
 
   if (divisiblePor5y7) {
-    print('El número ingresado es divisible por 5 y 7 al mismo tiempo.');
+    print('El numero ingresado es divisible por 5 y 7 al mismo tiempo.');
   } else {
-    print('El número ingresado no es divisible por 5 y 7 al mismo tiempo.');
+    print('El numero ingresado no es divisible por 5 y 7 al mismo tiempo.');
   }
 }*/
 /*
@@ -177,6 +177,190 @@ void main() {
     a = b; 
     b = c;
   }
+}*/
+/* Punto11
+import 'dart:io';
+
+void main() {
+   print("Ingrese los numeros separados por espacios:");
+  List<int> numeros = stdin.readLineSync()!.split(' ').map(int.parse).toList();
+  
+ int suma = sumarNumeros(numeros);
+  
+    print("La suma de los numeros es: $suma");
+}
+
+int sumarNumeros(List<int> numeros) {
+  int suma = 0;
+  for (int numero in numeros) {
+    suma += numero;
+  }
+  return suma;
+}*/
+
+/*punto12
+import 'dart:io';
+
+void main() {
+  List<int> numeros = [1, 2, 3, 4, 5];
+
+ print("Ingrese el valor por el cual desea multiplicar los numeros:");
+  int valor = int.parse(stdin.readLineSync()!);
+
+  numeros.forEach((numero) {
+    print("$numero multiplicado por $valor es igual a ${numero * valor}");
+  });
+}*/
+
+/*punto13
+
+void main() {
+  int numero = 1; 
+  while (numero <= 10) {
+    print(numero);
+    numero++; 
+  }
+}
+*/
+
+/*punto14
+import 'dart:io';
+import 'dart:math';
+
+void main() {
+  Random random = Random();
+  int numeroAleatorio = random.nextInt(100) + 1;
+
+  int intentos = 0;
+  int intentoUsuario;
+
+  print("Adivina un numero entre 1 y 100.");
+
+  do {
+    print("Ingresa tu intento:");
+    intentoUsuario = int.parse(stdin.readLineSync()!);
+    intentos++;
+
+    if (intentoUsuario < numeroAleatorio) {
+      print("El numero es mayor.");
+    } else if (intentoUsuario > numeroAleatorio) {
+      print("El numero es menor.");
+    }
+  } while (intentoUsuario != numeroAleatorio);
+
+  print("Felicidades, Adivinaste el numero $numeroAleatorio en $intentos intentos.");
+}*/
+
+/*punto15 
+void main() {
+  imprimirHolaMundo();
+}
+
+void imprimirHolaMundo() {
+  print("¡Hola, mundo!");
+}
+
+16.
+import 'dart:io';
+
+void main() {
+  print("Ingrese el primer numero:");
+  int num1 = int.parse(stdin.readLineSync()!);
+  
+  print("Ingrese el segundo numero:");
+  int num2 = int.parse(stdin.readLineSync()!);
+
+  int suma = sumarNumeros(num1, num2);
+  
+  print("La suma de $num1 y $num2 es: $suma");
+}
+
+int sumarNumeros(int num1, int num2) {
+  return num1 + num2;
+}*/
+
+
+
+/*17. 
+import 'dart:io';
+
+void main() {
+  print("Ingrese la base del rectangulo:");
+  double base = double.parse(stdin.readLineSync()!);
+  
+  print("Ingrese la altura del rectangulo:");
+  double altura = double.parse(stdin.readLineSync()!);
+
+    double area = calcularAreaRectangulo(base, altura);
+  
+  print("El area del rectangulo es: $area");
+}
+
+double calcularAreaRectangulo(double base, double altura) => base * altura;
+*/
+/*punto18 
+import 'dart:io';
+import 'dart:math';
+
+void main() {
+  print("Ingrese la base:");
+  int base = int.parse(stdin.readLineSync()!);
+  
+  print("Ingrese el exponente (opcional, presione Enter para usar 1 por defecto):");
+  int exponente = int.tryParse(stdin.readLineSync()!) ?? 1;
+
+  int resultado = calcularPotencia(base, exponente);
+  print("$base elevado a la $exponente es igual a $resultado");
+}
+
+int calcularPotencia(int base, [int exponente = 1]) {
+  return pow(base, exponente).toInt();
+}
+*/
+
+/*punto19
+import 'dart:io';
+
+void main() {
+  print("Ingrese un numero para verificar si es primo:");
+  int numero = int.parse(stdin.readLineSync()!);
+
+  if (esPrimo(numero)) {
+    print("$numero es primo.");
+  } else {
+    print("$numero no es primo.");
+  }
+}
+bool esPrimo(int numero) {
+  if (numero <= 1) {
+    return false;
+  }
+  for (int i = 2; i <= numero / 2; i++) {
+    if (numero % i == 0) {
+      return false;
+    }
+  }
+  return true;
+}*/
+
+/*punto20
+import 'dart:io';
+
+void main() {
+  print("Ingrese un número para calcular su factorial:");
+  int numero = int.parse(stdin.readLineSync()!);
+  
+  int factorial = calcularFactorial(numero);
+  
+  print("El factorial de $numero es: $factorial");
+}
+
+int calcularFactorial(int numero) {
+  int resultado = 1;
+  for (int i = 1; i <= numero; i++) {
+    resultado *= i;
+  }
+  return resultado;
 }*/
 
 
