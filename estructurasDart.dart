@@ -1,10 +1,10 @@
 /*import 'dart:io'; Punto1
 
 void main() {
-  stdout.write('Ingresa un número: ');
+  stdout.write('Ingresa un numero: ');
   int numero = int.parse(stdin.readLineSync()!);
 
-  if (num % 2 == 0 && num % 3 == 0) {
+  if (numero % 2 == 0 && numero % 3 == 0) {
     print('$numero es par y divisible por 3.');
   } else {
     print('$numero no es par y divisible por 3.');
@@ -13,7 +13,7 @@ void main() {
 /*import 'dart:io'; punto2
 
 void main() {
-  stdout.write('Ingresa los números separados por espacio: ');
+  stdout.write('Ingresa los numeros separados por espacio: ');
   String entrada = stdin.readLineSync()!;
   
   List<String> numStrList = entrada.split(' ');
@@ -33,15 +33,15 @@ void main() {
 
   print("List of objects:");
   for (var obj in objects) {
-    print("Code: ${obj['codigo']}, Name: ${obj['nombre']}, Description: ${obj['descripcion']}");
+    print("Codigo: ${obj['codigo']}, Nombre: ${obj['nombre']}, Descripcion: ${obj['descripcion']}");
   }
 }
 
 void addObject(List<Map<String, dynamic>> list, String code, String name, String description) {
   Map<String, dynamic> object = {
-    'codigo': code, 
-    'nombre': name, 
-    'descripcion': description, 
+    'Codigo': code, 
+    'Nombre': nombre, 
+    'Descripcion': descripcion, 
   };
   list.add(object);
 }
@@ -50,12 +50,12 @@ void addObject(List<Map<String, dynamic>> list, String code, String name, String
 void main() {
   final double pi = 3.14159;
 
-  stdout.write('Ingresa el radio del círculo: ');
+  stdout.write('Ingresa el radio del circulo: ');
   double radio = double.parse(stdin.readLineSync()!);
 
   double area = calculateCircleArea(radio, pi);
 
-  print('El área del círculo con radio $radio es: $area');
+  print('El area del circulo con radio $radio es: $area');
 }
 
 double calculateCircleArea(double radius, double pi) {
@@ -73,7 +73,7 @@ void main() {
 
   double finalVelocidad = calculateFinalVelocidad(altura, gravedad);  
 
-  print('La velocidad del objeto en caída libre es: $finalVelocidad m/s'); //
+  print('La velocidad del objeto en caida libre es: $finalVelocidad m/s'); //
 }
 
 double calculateFinalVelocidad(double altura, double gravedad) { 
@@ -84,13 +84,13 @@ double calculateFinalVelocidad(double altura, double gravedad) {
 import 'dart:io';
  
 void main() {
-  stdout.write('Ingresa un número: ');
+  stdout.write('Ingresa un numero: ');
   double numero = double.parse(stdin.readLineSync()!);
 
   if (numero > 0) {
-    print('El número ingresado es positivo.');
+    print('El numero ingresado es positivo.');
   } else if (numero < 0) {
-    print('El número ingresado es negativo.');
+    print('El numero ingresado es negativo.');
   } else {
     print('El numero ingresado es cero.');
   }
@@ -100,7 +100,7 @@ void main() {
 import 'dart:io';
 
 void main() {
-  stdout.write('Ingresa un número: ');
+  stdout.write('Ingresa un numero: ');
   int numero = int.parse(stdin.readLineSync()!);
 
   String mensaje = (numero % 2 == 0) ? 'par' : 'impar';
@@ -112,7 +112,7 @@ void main() {
 import 'dart:io';
 
 void main() {
-  stdout.write('Ingresa un número: ');
+  stdout.write('Ingresa un numero: ');
   int numero = int.parse(stdin.readLineSync()!);
 
   bool divisibleEntre5 = numero % 5 == 0;
@@ -129,13 +129,13 @@ void main() {
 import 'dart:io';
 
 void main() {
-  stdout.write('Ingresa el primer número: ');
+  stdout.write('Ingresa el primer numero: ');
   double numero1 = double.parse(stdin.readLineSync()!);
 
-  stdout.write('Ingresa el segundo número: ');
+  stdout.write('Ingresa el segundo numero: ');
   double numero2 = double.parse(stdin.readLineSync()!);
 
-  stdout.write('Ingresa la operación (+, -, *, /): ');
+  stdout.write('Ingresa la operacion (+, -, *, /): ');
   String operacion = stdin.readLineSync()!;
 
   double result;
@@ -158,7 +158,7 @@ void main() {
       }
       break;
     default:
-      print('Error: Operación no válida.');
+      print('Error: Operacion no valida.');
       return;
   }*/
   /*
