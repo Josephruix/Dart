@@ -1,5 +1,6 @@
-/*import 'dart:io'; Punto1
+/* Punto1
 
+import 'dart:io'; 
 void main() {
   stdout.write('Ingresa un numero: ');
   int numero = int.parse(stdin.readLineSync()!);
@@ -9,8 +10,10 @@ void main() {
   } else {
     print('$numero no es par y divisible por 3.');
   }
-}*/
-/*import 'dart:io'; punto2
+}
+*/
+/* punto2
+import 'dart:io'; 
 
 void main() {
   stdout.write('Ingresa los numeros separados por espacio: ');
@@ -37,15 +40,15 @@ void main() {
   }
 }
 
-void addObject(List<Map<String, dynamic>> list, String code, String name, String description) {
+void addObject(List<Map<String, dynamic>> list, String codigo, String nombre, String descripcion) {
   Map<String, dynamic> object = {
-    'Codigo': code, 
+    'Codigo': codigo, 
     'Nombre': nombre, 
     'Descripcion': descripcion, 
   };
   list.add(object);
 }
-}*/
+*/
 /* Punto 4
 void main() {
   final double pi = 3.14159;
@@ -96,7 +99,7 @@ void main() {
   }
 }
 */
-/*
+/* Punto 7
 import 'dart:io';
 
 void main() {
@@ -125,7 +128,7 @@ void main() {
     print('El numero ingresado no es divisible por 5 y 7 al mismo tiempo.');
   }
 }*/
-/*
+/* Punto 9
 import 'dart:io';
 
 void main() {
@@ -150,7 +153,7 @@ void main() {
       result = numero1 * numero2;
       break;
     case '/':
-      if (num2 != 0) {
+      if (numero2 != 0) {
         result = numero1 / numero2;
       } else {
         print('Error: No se puede dividir por cero.');
@@ -160,7 +163,12 @@ void main() {
     default:
       print('Error: Operacion no valida.');
       return;
-  }*/
+  }
+
+  print('El resultado de la operacion es: $result');
+}
+
+*/
   /*
   void main() {
   
@@ -177,7 +185,33 @@ void main() {
     a = b; 
     b = c;
   }
-}*/
+}
+*/
+
+/* Punto 10
+void main() {
+  print("Los primeros 20 numeros de la serie de Fibonacci son:");
+  for (int i = 0; i < 20; i++) {
+    print(fibonacci(i));
+  }
+}
+
+int fibonacci(int n) {
+  if (n <= 1) {
+    return n;
+  }
+  int a = 0;
+  int b = 1;
+  for (int i = 2; i <= n; i++) {
+    int c = a + b;
+    a = b;
+    b = c;
+  }
+  return b;
+}
+
+
+*/ 
 /* Punto11
 import 'dart:io';
 
