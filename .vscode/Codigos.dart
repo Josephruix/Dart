@@ -58,7 +58,7 @@ void main() {
   print('El área del triángulo es: $area');
   
 }
-/*
+*/
 /*Quinto punto
 import 'dart:io';
 
@@ -80,9 +80,8 @@ void main() {
   print('Su puntaje final es: $puntajeFinal');
 }
 }
-*/
 
- /*
+*/
 /*Sexto Punto
 void main() {
 Map<String, dynamic> obj = {
@@ -164,8 +163,8 @@ void main() {
     }
   }
 }
-
 */
+
 /*Punto  nueve
 import 'dart:io';
 
@@ -185,9 +184,9 @@ void main() {
   
   print('La nota final del estudiante es: $notaFinal');
 }
+*/
 
-/*
-Punto Diez
+/*Punto Diez
 void main() {
   
   Map<String, dynamic> informacionPersonal = {
@@ -203,11 +202,5 @@ void main() {
   informacionPersonal.forEach((key, value) {
     print('$key: $value');
   });
-}
-
-
-
-
-
- 
- 
+};
+*/
