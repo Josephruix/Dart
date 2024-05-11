@@ -1,5 +1,6 @@
 import 'dart:io';
 
+/* Parcial*/
 class Estudiante {
   String cedula;
   String nombre;
